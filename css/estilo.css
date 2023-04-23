@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; /* antes era 1rem= 16px
+                        ahora 1rem= 10px*/
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-weight:300;
+}
+
+/* ponerle class si solo quiero una pate */
+/*INICIO*/
+
+.navbar{
+    list-style-type: none;
+    background-color: #E7D9F7;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-end;
+}
+.nav-item{
+font-size: 30px;
+}
+
+
+.logoinicio{
+    width: 400px;
+    height: 70px;
+    padding: 0px 80px 5px 0px;
+}
+.navbar-nav li{
+    display:inline-block;
+
+}
+a{
+    color: #5B4475;
+    text-decoration: none;
+}
+a:visited{
+    color: #350544; 
+}
+a:active{
+    color: #858efa;
+    font-weight: bold;
+    font-size: 28px;
+}
+.portadatext{
+    font-size: 22px;
+    color: antiquewhite;
+    padding: 200px 760px 0px 20px;
+}
+.tituloportada{
+    font-size: 50px;
+    color: beige;
+    padding: 20px 760px 200px 20px;
+
+}
+.imagenPrincipal{
+    background-image: url("../multimedia/portada.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%; 
+    background-size: cover;
+}
+
+
+
+
+/*BIOGRAFIA*/
+.fotobio{
+    width: 400px;
+}
+.imagentexto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.imagentexto h1{
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 100px ;
+}
+.h2bio{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+.texto1bio{
+    padding: 20px 50px;
+    font-size: 25px;
+    font-weight: 400;
+}
+.texto2{
+    padding: 20px 50px;
+    font-size: 25px;
+    font-weight: 400;
+}
+.texto3{
+    padding: 0px 50px 0px 0px;
+    font-size: 25px;
+    font-weight: 400;
+}
+.tayadolecente{
+    height: 400px;
+    padding: 50px;
+}
+/*DISCOGRAFIA*/
+.titulodiscografia{
+    font-size: 40px;
+    color: #311e46;
+    padding: 100px 760px 0px 20px;
+}
+
+.padreImagenDiscografia{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    padding: 80px;
+}
+.ats{
+    width: 200px;
+    height: 200px ;
+}
+.albumnfearless{
+    width: 200px;
+    height: 200px ;
+}
+.albumSN{
+    width: 200px;
+    height: 200px ;
+}
+.albumred{
+    width: 200px;
+    height: 200px ;
+}
+.album1989{
+    width: 200px;
+    height: 200px ;
+}
+.albumreputation{
+    width: 200px;
+    height: 200px ;
+}
+.albumlover{
+    width: 200px;
+    height: 200px ;
+}
+.albumfolklore{
+    width: 200px;
+    height: 200px ;
+}
+.albumevermore{
+    width: 200px;
+    height: 200px ;
+}
+.albummidnights{
+    width: 200px;
+    height: 200px ;
+}
+
+/*SHOWS*/
+.portadashow{
+    width: 100%;
+}
+.showfechas{
+    text-align: center;
+    margin: 80px;
+    padding: 10px;
+}
+.fecha{
+    background-color: #d0d2e9;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+
+/*GALERIA*/
+.outfitstour{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.galeriaoutfits{
+    display: grid;
+    grid-template-columns:repeat(6, 200px);
+    grid-template-rows: repeat(4,200px);
+    gap: 10px 10px;
+    grid-template-areas: 
+    "outfit1 outfit2 outfit3 outfit3 outfit4 outfit4"
+    "outfit5 outfit5 outfit3 outfit3 outfit6 outfit7"
+    "outfit8 outfit9 outfit3 outfit3 outfit6 outfit10"
+    "outfit8 outfit11 outfit3 outfit3 outfit6 outfit10";
+    justify-content: center;
+
+}
+
+.outfit1{
+    grid-area: outfit1;
+    background-image: url(../multimedia/outfit7.2.webp);
+    background-position: center;
+    background-size: cover;
+}
+.outfit2{
+    grid-area: outfit2;
+    background-image: url(../multimedia/outfit10.webp);
+    background-position: center;
+    background-size: cover;
+}
+.outfit3{
+    grid-area: outfit3;
+    background-image: url(../multimedia/outfittour1.2.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+.outfit4{
+    grid-area: outfit4;
+    background-image:url(../multimedia/outfit6.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+.outfit5{
+    grid-area: outfit5;
+    background-image:url(../multimedia/outfit8.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+.outfit6{
+    grid-area: outfit6;
+    background-image:url(../multimedia/outfit7.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+.outfit7{
+    grid-area: outfit7;
+    background-image:url(../multimedia/outfittour3.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+.outfit8{
+    grid-area: outfit8;
+    background-image:url(../multimedia/outfit11.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+.outfit9{
+    grid-area: outfit9;
+    background-image: url(../multimedia/outfittour2.webp);
+    background-position: center;
+    background-size: cover;
+}
+.outfit10{
+    grid-area: outfit10;
+    background-image:url(../multimedia/outfit4.2.webp) ;
+    background-position: center;
+    background-size: cover;
+}
+.outfit11{
+    grid-area: outfit11;
+    background-image: url(../multimedia/outfit9.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+
+.fondogaleria{
+    background-color: #f0e6fc;
+}
+
+.titulovideo1{
+    color:#373b69;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 30px 760px 30px 20px;
+}
+
+.bodygaleria{
+    background-color: #858efa;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    width: 100%;
+}
+/*
+.bodygaleria{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    grid-template-rows: 90px 500px 850px 400px 80px; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "areamenu areamenu"
+    "main main"
+    "areagaleria areagaleria"
+    "areavideo areaespace"
+    "footer footer"; 
+}
+.encabezado { grid-area: areamenu; }
+.PortadaG { grid-area: main; }
+.galeriaoutfits { grid-area: areagaleria; }
+.video { grid-area: area-video; }
+.video2 { grid-area: areaespace; }
+.pieG{ grid-area: footer; }
+
+@media screen and (max-width: 480px){
+    .bodygaleria{
+        background-color:#e6b0e2;}
+    }
+*/
+/*CONTACTO*/
+.fondocontacto{
+    background-color: #311e46;
+}
+.titulocontacto{
+    font-size: 30px;
+    font-weight:800;
+    color: #E7D9F7;
+    padding: 200px 100px 0px 30px;
+}
+.formulario{
+    padding: 30px 100px 30px 30px;
+    font-size: 15px;
+    color:#E7D9F7;
+    font-weight:normal;
+}
+
+/*FOOTER*/
+
+.igpng{
+    width: 30px;
+}
+.youtubepng{
+    width: 30px;
+}
+.pieG{
+    background-color: rgb(168, 175, 252);
+    width: 100%;
+    height: 80px;
+    font-size: 22px;
+    color: #E7D9F7;
+    text-align: center;
+    padding: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.div{
+    text-align: center;
+}
+
+.igpng{
+    width: 30px;
+}
+.youtubepng{
+    width: 30px;
+}
+.pie{
+    background-color: rgb(168, 175, 252);
+    width: 100%;
+    height: 80px;
+    font-size: 22px;
+    color: #E7D9F7;
+    text-align: center;
+    padding: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.div{
+    text-align: center;
+}
+
+/*ESTRUCTURA GRILLAS*/
+/*.contenedortotal{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 0.1fr;
+    grid-template-areas: 
+    "menu"
+    "fondo"
+    "footer";
+}
+
+.menu{
+    grid-area: menu;
+}
+.imagenPrincipal{
+    grid-area: fondo;
+}
+.pie{
+    grid-area: footer;
+} */

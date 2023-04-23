@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="fondocontacto">
+    <header class="encabezado row">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img src="../multimedia/logo.png" alt="logoinicio" class="logoinicio"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="biografia.html">Biografia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="discografia.html">Discografia</a>
+                        </li>
+                        <li class="nav-item">
+                             <a class="nav-link" href="shows.html">Show</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>   
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="titulocontacto">
+            Deja tus datos para recibir nuevas noticias de TayTay!
+        </h1>
+        <form class="formulario">
+            <div>
+            <label for="nobre">Nombre:</label>
+            <input type="text" name="nombre" >
+            </div>
+
+            <div>
+            <label for="correo">Correo:</label>
+            <input type="email" name="coreeo">
+            </div>
+
+            <div>
+            <label for="mensaje">Deja un comentario</label>
+            <textarea name="mensaje cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+                <label for="noticias">Cuantas veces a la semana recibir un correo</label>
+
+                <input type="radio" name="noticias" value="1">1 vez
+                <input type="radio" name="noticias" value="2">2 veces
+                <input type="radio" name="noticias" value="3">Siempre que haya una noticia
+
+            <div>
+                <label for="terminos">acepto los terminos y condiciones</label>
+                <input type="checkbox" name="terminos"
+                value="terminos" required>
+                <label for="datos">autorizo recibir noticias</label>
+                <input type="checkbox" name="datos" value="datos"required>
+            </div>
+
+            <div>
+                <label for="swiftie">Hace cuanto eres Swiftie</label>
+                <select name="pais">
+                    <option value="-">----</option>
+                    <option value="-1">Hace menos de un año</option>
+                    <option value="1">hace 1 año</option>
+                    <option value="2-5">2-5 años</option>
+                    <option value="+5">más de 5 años</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="reset" value="Borrar Todo">
+                <input type="submit" value="Enviar">
+            </div>
+
+        </form>
+    </main>
+    <footer class="pie">
+        <a class="ig" href="https://www.instagram.com/taylorswift/">Instagram Oficial</a>
+        <a href="https://www.youtube.com/channel/UCqECaJ8Gagnn7YCbPEzWH6g
+        ">Canal Youtube Oficial</a>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
