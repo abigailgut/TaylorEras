@@ -1,0 +1,821 @@
+/* VARIABLES BIO*/
+/*Titulo de todas las paginas*/
+/*Imagenes Galeria*/
+/*
+.titulodiscografia{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(63, 36, 90);
+    margin-top: 150px;
+    margin-left: 50px;}*/
+.navbar {
+  list-style-type: none;
+  background-color: #483c50 !important;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navbar-item {
+  font-size: 30px;
+}
+
+.logoinicio {
+  width: 400px;
+  height: 70px;
+  padding: 0px 80px 5px 0px;
+}
+
+.navbar-nav li {
+  display: inline-block;
+}
+
+a {
+  color: #f8f8fa;
+  text-decoration: none;
+}
+a:visited {
+  color: #efedf5;
+}
+
+@media only screen and (max-width: 768px) {
+  .logoinicio {
+    width: 250px;
+    height: 50px;
+    padding: 0px 40px 5px 0px;
+  }
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 16px;
+    width: 100%;
+  }
+  .navbar-collapse {
+    display: none;
+  }
+  .navbar-item {
+    margin-top: 20px;
+  }
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #483c50;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-nav li {
+    display: block;
+    margin-top: 10px;
+  }
+  a {
+    font-size: 20px;
+    color: #f8f8fa;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #efedf5;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .logoinicio {
+    width: 200px;
+    height: 40px;
+    padding: 0px 30px 5px 0px;
+  }
+  .navbar {
+    font-size: 14px;
+    height: auto;
+    flex-direction: column;
+  }
+  .navbar-collapse {
+    display: none;
+  }
+  .navbar-item {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .navbar-nav li {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+  }
+  a {
+    font-size: 16px;
+    color: #f8f8fa;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #efedf5;
+  }
+}
+.pieG, .pie {
+  background-color: #375070;
+  width: 100%;
+  height: 80px;
+  font-size: 22px;
+  color: #E7D9F7;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0px;
+}
+.pieG .div, .pie .div {
+  text-align: center;
+}
+.pieG .igpng, .pie .igpng {
+  width: 30px;
+}
+.pieG .youtubepng, .pie .youtubepng {
+  width: 30px;
+}
+
+@media (max-width: 768px) {
+  .maincontacto {
+    margin: 100px 30px;
+    width: 90%;
+  }
+  .maincontacto .formulario div {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .maincontacto {
+    margin: 50px 15px;
+    width: 100%;
+  }
+  .maincontacto .formulario div {
+    width: 100%;
+  }
+  .maincontacto input[type=submit],
+  .maincontacto input[type=reset] {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+/*FOOTER*/
+.pieG, .pie {
+  background-color: #375070;
+  height: 80px;
+  font-size: 22px;
+  color: #E7D9F7;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0px;
+}
+.pieG .div, .pie .div {
+  text-align: center;
+}
+.pieG .igpng, .pie .igpng {
+  width: 30px;
+}
+.pieG .youtubepng, .pie .youtubepng {
+  width: 30px;
+}
+@media (max-width: 768px) {
+  .pieG, .pie {
+    height: 60px;
+    font-size: 18px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pieG .igpng, .pie .igpng,
+  .pieG .youtubepng,
+  .pie .youtubepng {
+    width: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .pieG, .pie {
+    height: 50px;
+    font-size: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pieG .igpng, .pie .igpng,
+  .pieG .youtubepng,
+  .pie .youtubepng {
+    width: 15px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* antes era 1rem= 16px
+  ahora 1rem= 10px*/
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*Inicio*/
+.imagenPrincipal {
+  background-image: url("../multimedia/portada.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 50px;
+}
+.imagenPrincipal .contenido {
+  max-width: 500px;
+  color: white;
+  text-align: left;
+  margin-top: 100px;
+}
+.imagenPrincipal .contenido .portadatext {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.imagenPrincipal .contenido .btn-cta {
+  background-color: #ff4b4b;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.imagenPrincipal .contenido .btn-cta:hover {
+  background-color: white;
+  color: #ff4b4b;
+}
+
+@media screen and (max-width: 994px) {
+  .imagenPrincipal .contenido {
+    max-width: 300px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .imagenPrincipal .contenido .portadatext {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .imagenPrincipal .contenido .btn-cta {
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 20px;
+  }
+}
+@media screen and (max-width: 598px) {
+  .imagenPrincipal {
+    padding-left: 30px;
+  }
+  .imagenPrincipal .contenido {
+    max-width: 200px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .imagenPrincipal .contenido .portadatext {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .imagenPrincipal .contenido .btn-cta {
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 20px;
+  }
+}
+/*BIOGRAFIA*/
+.fotobio {
+  width: 400px;
+}
+
+.imagentexto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.imagentexto h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-left: 100px;
+}
+
+.h2bio {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+.texto1bio {
+  padding: 20px 50px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.texto2 {
+  padding: 20px 50px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.texto3 {
+  padding: 0px 50px 0px 0px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.tayadolecente {
+  height: 400px;
+  padding: 50px;
+}
+
+/*DISCOGRAFIA*/
+.fondodisco {
+  background-color: #eeeff1;
+}
+
+.titulodiscografia {
+  font-size: 40px;
+  font-weight: bold;
+  color: #483c50;
+  margin-top: 150px;
+  margin-left: 50px;
+}
+
+.padreImagenDiscografia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.padreImagenDiscografia .ats {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.padreImagenDiscografia .albumnfearless {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.padreImagenDiscografia .albumSN {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.padreImagenDiscografia .albumred {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.padreImagenDiscografia .album1989 {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.padreImagenDiscografia2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.padreImagenDiscografia2 .albumreputation {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.padreImagenDiscografia2 .albumlover {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.padreImagenDiscografia2 .albumfolklore {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.padreImagenDiscografia2 .albumevermore {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.padreImagenDiscografia2 .albummidnights {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.top10 .PortadaTop10 {
+  margin-top: 50px;
+  width: 100%;
+}
+.top10 .titulotop10 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+  margin: 20px;
+}
+.top10 p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .padreImagenDiscografia,
+  .padreImagenDiscografia2 {
+    flex-wrap: wrap;
+  }
+  .padreImagenDiscografia .ats,
+  .padreImagenDiscografia .albumnfearless,
+  .padreImagenDiscografia .albumSN,
+  .padreImagenDiscografia .albumred,
+  .padreImagenDiscografia .album1989,
+  .padreImagenDiscografia .albumreputation,
+  .padreImagenDiscografia .albumlover,
+  .padreImagenDiscografia .albumfolklore,
+  .padreImagenDiscografia .albumevermore,
+  .padreImagenDiscografia .albummidnights,
+  .padreImagenDiscografia2 .ats,
+  .padreImagenDiscografia2 .albumnfearless,
+  .padreImagenDiscografia2 .albumSN,
+  .padreImagenDiscografia2 .albumred,
+  .padreImagenDiscografia2 .album1989,
+  .padreImagenDiscografia2 .albumreputation,
+  .padreImagenDiscografia2 .albumlover,
+  .padreImagenDiscografia2 .albumfolklore,
+  .padreImagenDiscografia2 .albumevermore,
+  .padreImagenDiscografia2 .albummidnights {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .titulodiscografia {
+    font-size: 24px;
+    margin-top: 150px;
+    margin-left: 10px;
+  }
+  .padreImagenDiscografia,
+  .padreImagenDiscografia2 {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .padreImagenDiscografia .ats,
+  .padreImagenDiscografia .albumnfearless,
+  .padreImagenDiscografia .albumSN,
+  .padreImagenDiscografia .albumred,
+  .padreImagenDiscografia .album1989,
+  .padreImagenDiscografia .albumreputation,
+  .padreImagenDiscografia .albumlover,
+  .padreImagenDiscografia .albumfolklore,
+  .padreImagenDiscografia .albumevermore,
+  .padreImagenDiscografia .albummidnights,
+  .padreImagenDiscografia2 .ats,
+  .padreImagenDiscografia2 .albumnfearless,
+  .padreImagenDiscografia2 .albumSN,
+  .padreImagenDiscografia2 .albumred,
+  .padreImagenDiscografia2 .album1989,
+  .padreImagenDiscografia2 .albumreputation,
+  .padreImagenDiscografia2 .albumlover,
+  .padreImagenDiscografia2 .albumfolklore,
+  .padreImagenDiscografia2 .albumevermore,
+  .padreImagenDiscografia2 .albummidnights {
+    height: 100%;
+    margin-bottom: 10px;
+  }
+}
+.top10 .PortadaTop10 {
+  margin-top: 50px;
+  width: 100%;
+}
+.top10 .titulotop10 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+  margin: 20px;
+}
+.top10 p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 50px;
+}
+@media (max-width: 768px) {
+  .top10 .PortadaTop10 {
+    margin-top: 30px;
+  }
+  .top10 .titulotop10 {
+    font-size: 24px;
+    margin: 10px;
+  }
+  .top10 p {
+    font-size: 16px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .top10 .PortadaTop10 {
+    margin-top: 20px;
+  }
+  .top10 .titulotop10 {
+    font-size: 20px;
+    margin: 5px;
+  }
+  .top10 p {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+}
+
+/*SHOWS*/
+.fondoshows {
+  background-color: #375070;
+}
+
+.portadashow {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.InitacionShows {
+  color: #E7D9F7;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+}
+.InitacionShows p {
+  font-size: 24px;
+}
+
+.showfechas {
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+}
+.showfechas .fecha {
+  font-size: 30px;
+  margin-bottom: 50px;
+  background: linear-gradient(to bottom right, #8c68ce, #e1f5fe);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/*GALERIA*/
+.outfitstour {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.galeriaoutfits {
+  display: grid;
+  grid-template-columns: repeat(6, 200px);
+  grid-template-rows: repeat(4, 200px);
+  gap: 10px 10px;
+  grid-template-areas: "outfit1 outfit2 outfit3 outfit3 outfit4 outfit4" "outfit5 outfit5 outfit3 outfit3 outfit6 outfit7" "outfit8 outfit9 outfit3 outfit3 outfit6 outfit10" "outfit8 outfit11 outfit3 outfit3 outfit6 outfit10";
+  justify-content: center;
+}
+.galeriaoutfits .outfit1 {
+  grid-area: outfit1;
+  background-image: url(../multimedia/outfit7.2.webp);
+  background-position: center;
+  background-size: cover;
+}
+.galeriaoutfits .outfit2 {
+  grid-area: outfit2;
+  background-image: url(../multimedia/outfit10.webp);
+  background-position: center;
+  background-size: cover;
+}
+.galeriaoutfits .outfit3 {
+  grid-area: outfit3;
+  background-image: url(../multimedia/outfittour1.2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.galeriaoutfits .outfit4 {
+  grid-area: outfit4;
+  background-image: url(../multimedia/outfit6.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.galeriaoutfits .outfit5 {
+  grid-area: outfit5;
+  background-image: url(../multimedia/outfit8.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.galeriaoutfits .outfit6 {
+  grid-area: outfit6;
+  background-image: url(../multimedia/outfit7.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.galeriaoutfits .outfit7 {
+  grid-area: outfit7;
+  background-image: url(../multimedia/outfittour3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.galeriaoutfits .outfit8 {
+  grid-area: outfit8;
+  background-image: url(../multimedia/outfit11.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.galeriaoutfits .outfit9 {
+  grid-area: outfit9;
+  background-image: url(../multimedia/outfittour2.webp);
+  background-position: center;
+  background-size: cover;
+}
+.galeriaoutfits .outfit10 {
+  grid-area: outfit10;
+  background-image: url(../multimedia/outfit4.2.webp);
+  background-position: center;
+  background-size: cover;
+}
+.galeriaoutfits .outfit11 {
+  grid-area: outfit11;
+  background-image: url(../multimedia/outfit9.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .galeriaoutfits {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(11, 600px);
+    gap: 10px 10px;
+    grid-template-areas: "outfit1" "outfit2" "outfit3" "outfit4" "outfit5" "outfit6" "outfit7" "outfit8" "outfit9" "outfit10" "outfit11";
+    justify-content: center;
+  }
+  .galeriaoutfits .outfit1, .galeriaoutfits .outfit2, .galeriaoutfits .outfit3, .galeriaoutfits .outfit4, .galeriaoutfits .outfit5, .galeriaoutfits .outfit6, .galeriaoutfits .outfit7, .galeriaoutfits .outfit8, .galeriaoutfits .outfit9, .galeriaoutfits .outfit10, .galeriaoutfits .outfit11 {
+    background-size: cover;
+  }
+  .galeriaoutfits .outfit3, .galeriaoutfits .outfit8, .galeriaoutfits .outfit11 {
+    background-size: contain;
+  }
+}
+.videogaleria {
+  background-color: #491850;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.titulovideo1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.video1,
+.video2 {
+  border: 5px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 50px;
+}
+
+.video2 {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .titulovideo1 {
+    font-size: 2rem;
+  }
+  .video1,
+  .video2 {
+    width: 100%;
+  }
+  .video2 {
+    margin-left: 0;
+  }
+}
+/*CONTACTO*/
+.fondocontacto {
+  background-color: #F0F0F0;
+}
+.fondocontacto .maincontacto {
+  margin: 150px 50px;
+  width: 80%;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.fondocontacto .maincontacto .titulocontacto {
+  font-size: 24px;
+  color: #68188d;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.fondocontacto .maincontacto .formulario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.fondocontacto .maincontacto .formulario div {
+  width: 48%;
+  margin-bottom: 20px;
+}
+.fondocontacto .maincontacto .formulario label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.fondocontacto .maincontacto .formulario input[type=text],
+.fondocontacto .maincontacto .formulario input[type=email],
+.fondocontacto .maincontacto .formulario textarea {
+  width: 100%;
+  padding: 5px;
+  border: 2px solid #375070;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.fondocontacto .maincontacto .formulario input[type=text]:focus,
+.fondocontacto .maincontacto .formulario input[type=email]:focus,
+.fondocontacto .maincontacto .formulario textarea:focus {
+  outline: none;
+}
+.fondocontacto .maincontacto .formulario textarea {
+  resize: vertical;
+}
+.fondocontacto .maincontacto .formulario input[type=radio],
+.fondocontacto .maincontacto .formulario input[type=checkbox] {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.fondocontacto .maincontacto .formulario input[type=submit],
+.fondocontacto .maincontacto .formulario input[type=reset] {
+  background-color: #375070;
+  border: none;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.fondocontacto .maincontacto .formulario input[type=submit]:hover,
+.fondocontacto .maincontacto .formulario input[type=reset]:hover {
+  background-color: #375070;
+}
+
+@media (max-width: 768px) {
+  .maincontacto {
+    margin: 100px 30px;
+    width: 90%;
+  }
+  .maincontacto .formulario div {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .maincontacto {
+    margin: 50px 15px;
+    width: 100%;
+  }
+  .maincontacto .formulario div {
+    width: 100%;
+  }
+  .maincontacto input[type=submit],
+  .maincontacto input[type=reset] {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

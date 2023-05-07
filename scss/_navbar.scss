@@ -1,0 +1,137 @@
+.navbar {
+    list-style-type: none;
+    background-color: #483c50 !important;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  
+    &-collapse {
+      flex-basis: 100%;
+      flex-grow: 1;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  
+    &-item {
+      font-size: 30px;
+    }
+  }
+  
+  .logoinicio {
+    width: 400px;
+    height: 70px;
+    padding: 0px 80px 5px 0px;
+  }
+  
+  .navbar-nav li {
+    display: inline-block;
+  }
+  
+  a {
+    color: #f8f8fa;
+    text-decoration: none;
+  
+    &:visited {
+      color: #efedf5;
+    }
+  }
+   
+// Estilos para tablet
+@media only screen and (max-width: 768px) {
+  .logoinicio {
+    width: 250px;
+    height: 50px;
+    padding: 0px 40px 5px 0px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 16px;
+    width: 100%;
+
+    &-collapse {
+      display: none;
+    }
+
+    &-item {
+      margin-top: 20px;
+    }
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #483c50;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-nav li {
+    display: block;
+    margin-top: 10px;
+  }
+
+  a {
+    font-size: 20px;
+    color: #f8f8fa;
+    text-decoration: none;
+
+    &:visited {
+      color: #efedf5;
+    }
+  }
+}
+
+// Estilos para celular
+@media only screen and (max-width: 480px) {
+  .logoinicio {
+    width: 200px;
+    height: 40px;
+    padding: 0px 30px 5px 0px;
+  }
+
+  .navbar {
+    font-size: 14px;
+    height: auto;
+    flex-direction: column;
+
+    &-collapse {
+      display: none;
+    }
+
+    &-item {
+      margin-top: 10px;
+      font-size: 20px;
+    }
+  }
+
+  .navbar-nav li {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  a {
+    font-size: 16px;
+    color: #f8f8fa;
+    text-decoration: none;
+
+    &:visited {
+      color: #efedf5;
+    }
+  }
+}

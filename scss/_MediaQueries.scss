@@ -1,0 +1,94 @@
+
+
+  //CONTACTO  para tablet
+@media (max-width: 768px) {
+  .maincontacto {
+    margin: 100px 30px;
+    width: 90%;
+
+    .formulario div {
+      width: 100%;
+    }
+  }
+}
+
+// para celular
+@media (max-width: 480px) {
+  .maincontacto {
+    margin: 50px 15px;
+    width: 100%;
+
+    .formulario div {
+      width: 100%;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+}
+
+  
+
+
+  
+/*FOOTER*/
+.pieG {
+    background-color: #375070;
+    height: 80px;
+    font-size: 22px;
+    color: #E7D9F7;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px;
+    
+    .div {
+      text-align: center;
+    }
+    
+    .igpng {
+      width: 30px;
+    }
+    
+    .youtubepng {
+      width: 30px;
+    }
+  
+    // Media query para tablet
+    @media (max-width: 768px) {
+      height: 60px;
+      font-size: 18px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      .igpng,
+      .youtubepng {
+        width: 20px;
+      }
+    }
+  
+    // Media query para celular
+    @media (max-width: 480px) {
+      height: 50px;
+      font-size: 16px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      .igpng,
+      .youtubepng {
+        width: 15px;
+      }
+    }
+  }
+  
+  .pie{    @extend .pieG;
+  }
+
+  

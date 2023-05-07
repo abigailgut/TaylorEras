@@ -1,0 +1,86 @@
+/*GALERIA*/
+.outfitstour{
+  width: 100%;
+  margin-top: 50px;
+}
+
+.galeriaoutfits{
+  display: grid;
+  grid-template-columns: repeat(6, 200px);
+  grid-template-rows: repeat(4, 200px);
+  gap: 10px 10px;
+  grid-template-areas: 
+      "outfit1 outfit2 outfit3 outfit3 outfit4 outfit4"
+      "outfit5 outfit5 outfit3 outfit3 outfit6 outfit7"
+      "outfit8 outfit9 outfit3 outfit3 outfit6 outfit10"
+      "outfit8 outfit11 outfit3 outfit3 outfit6 outfit10";
+  justify-content: center;
+
+  .outfit1{
+      grid-area: outfit1;
+      background-image: $outfit1;
+      background-position: center;
+      background-size: cover;
+  }
+  .outfit2{
+      grid-area: outfit2;
+      background-image: $outfit2;
+      background-position: center;
+      background-size: cover;
+  }
+  .outfit3{
+      grid-area: outfit3;
+      background-image: $outfit3;
+      background-position: center;
+      background-size: cover;
+  }
+  .outfit4{
+      grid-area: outfit4;
+      background-image: $outfit4;
+      background-position: center;
+      background-size: cover;
+  }
+  .outfit5{
+      grid-area: outfit5;
+      background-image: $outfit5;
+      background-position: center;
+      background-size: cover;
+  }
+  .outfit6{
+      grid-area: outfit6;
+      background-image: $outfit6;
+      background-position: center;
+      background-size: cover;
+  }
+  .outfit7{
+      grid-area: outfit7;
+      background-image: $outfit7;
+      background-position: center;
+      background-size: cover;
+  }
+  .outfit8{
+      grid-area: outfit8;
+      background-image: $outfit8;
+      background-position: center;
+      background-size: cover;
+  }
+  .outfit9{
+      grid-area: outfit9;
+      background-image: $outfit9;
+      background-position: center;
+      background-size: cover;
+  }
+  .outfit10{
+      grid-area: outfit10;
+      background-image: $outfit10;
+      background-position: center;
+      background-size: cover;
+  }
+  .outfit11{
+      grid-area: outfit11;
+      background-image: $outfit11;
+      background-position: center;
+      background-size: cover;
+  }
+}
+
